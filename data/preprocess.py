@@ -95,13 +95,16 @@ def preprocess_amazon():
 
     print("\nProcessing Amazon...")
 
-    df = pd.read_csv(
-        RAW_DIR / "amazon" / "amazon_reviews.csv"
+    df = pd.read_json(
+        RAW_DIR / "amazon" / "Cell_Phones_and_Accessories_5.json",
+        lines=True
     )
 
     df = df[
         ["reviewText", "overall"]
     ]
+
+    df = df.dropna()
 
     df = df.rename(
         columns={
@@ -109,15 +112,9 @@ def preprocess_amazon():
         }
     )
 
-    df = df.dropna()
-
-    # Remove neutral reviews
     df = df[
         df["overall"] != 3
     ]
-
-    # 4,5 -> positive
-    # 1,2 -> negative
 
     df["label"] = (
         df["overall"] >= 4
@@ -133,8 +130,6 @@ def preprocess_amazon():
     )
 
     print(f"Amazon saved: {len(df)} rows")
-
-
 # ==================================================
 # YELP
 # ==================================================
