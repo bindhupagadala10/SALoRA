@@ -1,0 +1,13 @@
+source,target,jaccard,oov,dss_v1
+imdb,twitter,0.1502,0.3525,0.6011
+imdb,amazon,0.1943,0.3476,0.5767
+imdb,yelp,0.2881,0.3713,0.5416
+twitter,imdb,0.1502,0.8364,0.8431
+twitter,amazon,0.2212,0.681,0.7299
+twitter,yelp,0.2232,0.7341,0.7555
+amazon,imdb,0.1943,0.7833,0.7945
+amazon,twitter,0.2212,0.5807,0.6798
+amazon,yelp,0.2731,0.6565,0.6917
+yelp,imdb,0.2881,0.6528,0.6823
+yelp,twitter,0.2232,0.4188,0.5978
+yelp,amazon,0.2731,0.4288,0.5779
