@@ -1,0 +1,20 @@
+{
+  "validation": {
+    "validation_loss": 0.760625422000885,
+    "validation_accuracy": 0.8238805970149253,
+    "validation_macro_f1": 0.8234779269262028,
+    "validation_runtime": 0.7841,
+    "validation_samples_per_second": 427.251,
+    "validation_steps_per_second": 53.566,
+    "epoch": 3.0
+  },
+  "test": {
+    "test_loss": 0.5537744164466858,
+    "test_accuracy": 0.8452380952380952,
+    "test_macro_f1": 0.8452161587526577,
+    "test_runtime": 0.7413,
+    "test_samples_per_second": 453.248,
+    "test_steps_per_second": 56.656,
+    "epoch": 3.0
+  }
+}
