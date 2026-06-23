@@ -4,7 +4,7 @@
 
 ## Overview
 
-SALoRA is a final-year engineering project and journal publication effort focused on domain adaptation in sentiment analysis.
+SALoRA is a journal publication effort focused on domain adaptation in sentiment analysis.
 
 The project investigates whether measured domain divergence can be used to automatically determine the amount of adaptation capacity required for efficient cross-domain transfer learning.
 
